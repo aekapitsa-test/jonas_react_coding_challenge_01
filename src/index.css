@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.tipWrapper {
+  min-width: 500px;
+  margin: 50px;
+  /*width: 100px;*/
+  /*height: 100px;*/
+  /*background-color: #000;*/
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #322929;
+
+  background-color: beige;
+}
+
+/*FEEDBACK PART*/
+
+.feedbackBox {
+  margin: 10px;
+  /*background-color: beige;*/
+}
+
+.questionWrapper {
+  display: flex;
+  border-bottom: 1px solid black;
+  margin-bottom: 3px;
+}
+
+.questionSelectWrapper {
+  display: flex;
+  border-bottom: 1px solid black;
+  margin-bottom: 3px;
+}
+
+.questionText {
+  width: 100%;
+}
+
+.inputBox {
+  padding: 0 5px;
+  border: none;
+  width: 70px;
+}
+
+.inputBox:focus {
+  border: none;
+  outline-width: 0;
+}
+
+.selectElement {
+}
+
+.selectOption {
+}
+
+/*TIP CALC PART*/
+
+.tipCalcBox {
+  margin: 10px;
+  /*background-color: antiquewhite;*/
+}
+
+.tipText {
+}
+
+.controlPanelWrapper {
+}
+
+.button {
+}
+
+/*TEXT DECORATION*/
+
+.h2Header {
+  font-size: 32px;
+  color: darkslategrey;
+  font-weight: 700;
+}

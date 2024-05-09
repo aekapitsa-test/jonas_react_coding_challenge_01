@@ -1,5 +1,11 @@
+import TipWrapper from "./TipSection/TipWrapper";
+
 function App() {
-  return <div></div>;
+  return (
+    <>
+      <TipWrapper />
+    </>
+  );
 }
 
 export default App;
