@@ -1,5 +1,7 @@
-function TipText() {
-  return <p className="tipText">Result of calc with tip amount</p>;
+function TipText({ averageTipPercentage }) {
+  return (
+    <p className="tipText">{`Amount for payment: ${0} (${0} + ${averageTipPercentage})`}</p>
+  );
 }
 
 export default TipText;
