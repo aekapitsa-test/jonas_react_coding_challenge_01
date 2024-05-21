@@ -3,16 +3,18 @@ import FeedbackBox from "./Feedback/FeedbackBox";
 import { useState } from "react";
 
 function TipWrapper() {
-  const [clientsTip, setClientsTip] = useState(0);
-  const [otherTip, setOtherTip] = useState(0);
+  type TipState = [number, (a: number) => void];
 
-  let averageTipPercentage = (clientsTip + otherTip) / 2;
+  const [clientsTip, setClientsTip]: TipState = useState(0);
+  const [otherTip, setOtherTip]: TipState = useState(0);
 
-  function handleClientsTip(tipValue) {
+  let averageTipPercentage: number = (clientsTip + otherTip) / 2;
+
+  function handleClientsTip(tipValue: number): void {
     setClientsTip(tipValue);
   }
 
-  function handleOtherTip(tipValue) {
+  function handleOtherTip(tipValue: number): void {
     setOtherTip(tipValue);
   }
 

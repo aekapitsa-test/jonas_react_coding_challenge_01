@@ -1,9 +1,14 @@
 import QuestionText from "./QuestionText";
 import InputBox from "../../Utilities/InputElements/InputBox";
 import SelectElement from "../../Utilities/InputElements/SelectElement";
+import IQuestionWrapperProps from "./Interfaces/IQuestionWrapperProps";
 
-function QuestionWrapper({ questionObj, handleClientsTip, handleOtherTip }) {
-  // rewrite using if to show variants?
+function QuestionWrapper({
+  questionObj,
+  handleClientsTip,
+  handleOtherTip,
+}: IQuestionWrapperProps) {
+  // re-write using if to show variants?
 
   return (
     <div className="questionWrapper">

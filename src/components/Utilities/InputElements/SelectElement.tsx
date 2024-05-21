@@ -1,11 +1,12 @@
 import SelectOption from "./SelectOption";
+import ISelectElementProps from "./Interfaces/ISelectElementProps";
 
 function SelectElement({
   variantsOfAnswer,
   feedbackProvider,
   handleClientsTip,
   handleOtherTip,
-}) {
+}: ISelectElementProps) {
   return (
     <select
       className="selectElement"
@@ -20,7 +21,6 @@ function SelectElement({
       }}
     >
       <option hidden>...</option>
-
       {variantsOfAnswer.map(([clientAnswer, percentageForTipCalc], index) => {
         return (
           <SelectOption

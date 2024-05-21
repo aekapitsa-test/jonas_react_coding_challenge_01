@@ -1,13 +1,14 @@
 import QuestionWrapper from "./QuestionWrapper";
 import H2Header from "../../Utilities/TextElements/H2Header";
+import IFeedbackBoxProps from "./Interfaces/IFeedbackBoxProps";
+import IQuestionObj from "./Interfaces/IQuestionObj";
 
-function FeedbackBox({ handleClientsTip, handleOtherTip }) {
-  const questions = [
+function FeedbackBox({ handleClientsTip, handleOtherTip }: IFeedbackBoxProps) {
+  const questions: IQuestionObj[] = [
     {
       question: "How much was the bill?",
       typeOfAnswer: "input",
       variantsOfAnswers: [],
-      feedbackProvider: "",
     },
     {
       question: "How did you like the service?",
